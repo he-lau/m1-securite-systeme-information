@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <header>
-        <img src="logo.png" alt="Logo" class="logo">
-      </header>
       <div class="container">
+                <h1>Connexion</h1>
       <form action="php/connexion.php" method="post">
+        <img src="img/logo.png" alt="Logo" class="logo">
+
         <input type="text" placeholder="Identifiant" name="user">
         <input type="password" placeholder="Mot de passe" name="mdp">
         <div class="buttons">

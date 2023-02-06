@@ -3,19 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
+  margin: 100px
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
-  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  align-self: flex-start;
 }
 
 form {
