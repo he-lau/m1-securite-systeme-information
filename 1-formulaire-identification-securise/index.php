@@ -16,7 +16,7 @@
         <div class="buttons">
           <button type="reset">Réinitialiser</button>
           <button type="submit">Valider</button>
-          <button type="button" onclick="window.location.href='php/inscription.php'">Ajout compte</button>
+          <button type="button" onclick="window.location.href='php/inscription.php'">S'inscrire</button>
         </div>
       </form>
 
