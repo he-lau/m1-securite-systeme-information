@@ -8,7 +8,7 @@
   <body>
       <div class="container">
                 <h1>Connexion</h1>
-      <form action="php/connexion.php" method="post">
+      <form action="index.php" method="post">
         <img src="img/logo.png" alt="Logo" class="logo">
 
         <input type="text" placeholder="Identifiant" name="user">
@@ -19,7 +19,9 @@
           <button type="button" onclick="window.location.href='php/inscription.php'">Ajout compte</button>
         </div>
       </form>
-    </div>
 
+      <?php require_once("php/connexion.php") ?>
+
+    </div>
   </body>
 </html>
