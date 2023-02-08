@@ -17,9 +17,13 @@ if(isset($_POST['user']) && isset($_POST['mdp'])) {
       $user = htmlspecialchars($_POST['user']);
       $password = htmlspecialchars($_POST['mdp']);
 
+
       $sql = "SELECT * FROM users WHERE username = :username";
       $stmt = $db->prepare($sql);
-      $stmt->bindParam(':username', $user);
+      $stmt->bindParam(':username', $user, PDO::PARAM_STR);
+
+      // ralentir brute force
+      sleep(1);
 
       $stmt->execute();
       $result = $stmt->fetch();

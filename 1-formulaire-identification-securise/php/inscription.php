@@ -35,7 +35,7 @@
 
               $sql = "SELECT * FROM users WHERE username = :username";
               $stmt = $db->prepare($sql);
-              $stmt->bindParam(':username', $user);
+              $stmt->bindParam(':username', $user, PDO::PARAM_STR);
 
               $stmt->execute();
               $result = $stmt->fetch();
@@ -43,8 +43,8 @@
               if(!$result) {
                 $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
                 $stmt = $db->prepare($sql);
-                $stmt->bindParam(':username', $user);
-                $stmt->bindParam(':password', $password);
+                $stmt->bindParam(':username', $user,PDO::PARAM_STR);
+                $stmt->bindParam(':password', $password, PDO::PARAM_STR);
 
                 $stmt->execute();
 
