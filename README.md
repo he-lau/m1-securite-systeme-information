@@ -21,7 +21,7 @@
 ### Les étapes pour exécuter en local
 
 1. Avoir installé un serveur local
-2. Mettre en place la base de données en créant le(s) table(s) nécessaire : exécuter le script sql `bd.sql` avec la commande `source` sous Mysql
+2. Mettre en place la base de données en créant la/les table(s) nécessaire : exécuter le script sql `bd.sql` avec la commande `source` sous Mysql
 3. Modifier la valeur des variables dans le fichier `php/functions_db.php` pour pouvoir se connecter à la base de données créées :
 - `$server` : le DSN suit une syntaxe spécifique. ("pilote:host=serveur;dbname=nomBd")
 - `$username` : l'identifiant de l'utilisateur
