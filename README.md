@@ -18,7 +18,7 @@
     - mot de passe : 8 caractères minimum, 1 chiffre, 1 majuscule, et 1 minuscule
 
 
-**IMPORTANT : il est conseiller de ne pas entrer en dur les informations identifiantes de la base de données dans les variables, mais plutôt les mettre dans un fichier à part et se référer au chemin du fichier (EN-DEHORS DE LA RACINE DU SITE). Je ne l'ai pas fait pour faciliter la portabilité du projet.**    
+**IMPORTANT : il est recommandé de ne pas inclure les informations d'identification de la base de données directement dans le code source, mais de les stocker dans un fichier séparé et de faire référence à son chemin (HORS DE LA RACINE DU SITE). J'ai fait ce choix pour simplifier la portabilité du projet.**    
 
 
 ### Les étapes pour exécuter en local
