@@ -12,7 +12,7 @@
   - Hachage du mot de passe avec Bcrypt
   - Force brute :
     - Tentative de connexion limité
-    - `sleep(1)` : avant d'exécuter une requête sql
+    - `sleep(1)` : avant d'exécuter la reqête de connexion
   - Conditions sur les champs d'identification
     - identifiant : 4 caractères minimum
     - mot de passe : 8 caractères minimum, 1 chiffre, 1 majuscule, et 1 minuscule
