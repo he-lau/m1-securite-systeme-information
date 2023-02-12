@@ -1,3 +1,7 @@
+<?php
+libxml_disable_entity_loader(true);
+ ?>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -9,6 +13,10 @@
   <?php
 
   session_start();
+
+  $user_ip = $_SERVER['REMOTE_ADDR'];
+
+  echo $user_ip;
 
   $token = uniqid(rand(), true); // jeton unique
   //$token = 11;

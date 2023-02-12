@@ -16,9 +16,8 @@
   - Conditions sur les champs d'identification
     - identifiant : 4 caractères minimum
     - mot de passe : 8 caractères minimum, 1 chiffre, 1 majuscule, et 1 minuscule
-
-
-**IMPORTANT : il est recommandé de ne pas inclure les informations d'identification de la base de données directement dans le code source, mais de les stocker dans un fichier séparé et de faire référence à son chemin (HORS DE LA RACINE DU SITE). J'ai fait ce choix pour simplifier la portabilité du projet.**    
+  - Cacher le contenu des dossiers : `index.php`  
+  - Imposer un comportement : token
 
 
 ### Les étapes pour exécuter en local
@@ -30,3 +29,5 @@
 - `$username` : l'identifiant de l'utilisateur
 - `$password` : mot de passe de l'utilisateur
 4. Lancer votre serveur local et accéder au repértoire contenant le site
+
+**IMPORTANT :** il est recommandé de ne pas inclure les informations d'identification de la base de données directement dans le code source, mais de les stocker dans un fichier séparé et de faire référence à son chemin (HORS DE LA RACINE DU SITE). J'ai fait ce choix pour simplifier la portabilité du projet.    
