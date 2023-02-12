@@ -1,4 +1,9 @@
 <?php
+// ne pas afficher les erreurs aux utilisateurs
+ini_set('display_errors', 0);
+ ?>
+
+<?php
 session_start();
 // vérification du jeton de sécurité
 if(isset($_SESSION['token']) && isset($_SESSION['token_time']) && isset($_POST['token'])) {

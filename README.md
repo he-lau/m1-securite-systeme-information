@@ -18,6 +18,7 @@
     - mot de passe : 8 caractères minimum, 1 chiffre, 1 majuscule, et 1 minuscule
   - Cacher le contenu des dossiers : `index.php`  
   - Imposer un comportement : token
+  - Cacher les erreurs aux utilisateurs : `ini_set('display_errors', 0)`
 
 
 ### Les étapes pour exécuter en local
