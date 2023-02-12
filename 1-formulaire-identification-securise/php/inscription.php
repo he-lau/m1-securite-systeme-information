@@ -1,3 +1,8 @@
+<?php
+// ne pas afficher les erreurs aux utilisateurs
+ini_set('display_errors', 0);
+ ?>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>

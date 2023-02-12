@@ -2,6 +2,13 @@
 libxml_disable_entity_loader(true);
  ?>
 
+ <?php
+ // ne pas afficher les erreurs aux utilisateurs
+ ini_set('display_errors', 0);
+  ?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -16,7 +23,7 @@ libxml_disable_entity_loader(true);
 
   $user_ip = $_SERVER['REMOTE_ADDR'];
 
-  echo $user_ip;
+  //echo $user_ip;
 
   $token = uniqid(rand(), true); // jeton unique
   //$token = 11;
