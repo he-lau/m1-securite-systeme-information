@@ -5,10 +5,23 @@
     <title></title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+
+  <?php
+
+  session_start();
+
+  $token = uniqid(rand(), true); // jeton unique
+  //$token = 11;
+  $_SESSION['token'] = $token; // stockage
+  // heure de création du jeton
+  $_SESSION['token_time'] = time();
+
+   ?>
+
   <body>
       <div class="container">
-                <h1>Connexion</h1>
-      <form action="index.php" method="post">
+      <h1>Connexion</h1>
+      <form action="php/connexion.php" method="post">
         <img src="img/logo.png" alt="Logo" class="logo">
 
         <input type="text" placeholder="Identifiant" name="user">
@@ -17,11 +30,14 @@
           <button type="reset">Réinitialiser</button>
           <button type="submit">Valider</button>
           <button type="button" onclick="window.location.href='php/inscription.php'">S'inscrire</button>
-        </div>
-      </form>
 
-      <?php require_once("php/connexion.php") ?>
-
+      </div>
+      <input type="hidden" name="token"
+      id="token" value="<?php echo $token;?>"/>
+    </form>
+    <?php if (isset($_SESSION['message_connexion'])) {
+        echo $_SESSION['message_connexion'];
+    } ?>
     </div>
   </body>
 </html>
