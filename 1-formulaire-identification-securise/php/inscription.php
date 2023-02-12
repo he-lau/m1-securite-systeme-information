@@ -22,7 +22,7 @@
       <div class="container">
       <h1>Inscription</h1>
       <form action="inscription_back.php" method="post">
-        <img src="img/logo.png" alt="Logo" class="logo">
+        <img src="../img/logo.png" alt="Logo" class="logo">
 
         <input type="text" placeholder="Identifiant" name="user">
         <input type="password" placeholder="Mot de passe" name="mdp">
